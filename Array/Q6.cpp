@@ -12,17 +12,7 @@ void leftRotate(int arr[], int k, int n)
 	            copy(arr+k,arr+n,temp);
 	            copy(arr,arr+k,temp+n-k);
 	            copy(temp,temp+n,arr);
-	       } 
-	       
-	       if(k>n)
-	       {
-	            int temp[n];
-	            copy(arr+(k%n),arr+n,temp);
-	            copy(arr,arr+(k%n),temp+n-(k%n));
-	            copy(temp,temp+n,arr);
-	       }
-	            
-	           
+	       }   
 	       
 	   }
 	} 
